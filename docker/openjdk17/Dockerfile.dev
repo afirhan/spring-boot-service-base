@@ -1,0 +1,30 @@
+# BUILD STAGE
+FROM maven:3.8.5-openjdk-17 as build
+LABEL maintainer="Firhan Ali <alifirhan.fa@gmail.com>"
+LABEL description="Spring Boot Service Base Application - Build Stage"
+WORKDIR /app
+
+# Salin file pom.xml dan source code
+COPY backend/servicebase/pom.xml .
+COPY backend/servicebase/src ./src
+
+# Unduh dependensi proyek dan build aplikasi
+RUN mvn package
+
+# Debugging: Periksa isi direktori app
+RUN ls -l /app
+
+# RUNTIME STAGE
+FROM maven:3.8.5-openjdk-17 as runtime
+LABEL maintainer="Firhan Ali <alifirhan.fa@gmail.com>"
+LABEL description="Spring Boot Service Base Application - Runtime Stage"
+WORKDIR /app
+
+# Salin hasil build dari tahap build ke image runtime
+COPY --from=build /app .
+
+# Debugging: Periksa isi direktori kerja runtime
+RUN ls -l /app
+
+# Tentukan perintah untuk menjalankan aplikasi
+CMD ["mvn", "spring-boot:run"]

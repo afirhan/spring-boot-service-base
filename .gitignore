@@ -1,8 +1,9 @@
-# Compiled class file
+# Compiled class files
 *.class
 
-# Log file
+# Log files
 *.log
+*.log.*
 
 # BlueJ files
 *.ctxt
@@ -10,7 +11,7 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package files
 *.jar
 *.war
 *.nar
@@ -19,6 +20,64 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# Dependency directories
+node_modules/
+target/
+bin/
+build/
+out/
+dist/
+.mvn/
+.gradle/
+.venv/
+env/
+
+# IDE-specific files and directories
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
+.project
+.classpath
+.settings/
+.metadata/
+.recommenders/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python-specific files and directories
+__pycache__/
+*.py[cod]
+*.pyo
+
+# JavaScript/TypeScript-specific files
+*.tsbuildinfo
+
+# Configuration files
+.env
+.env.*
+
+# CI/CD configuration files and directories
+.circleci/
+.github/
+.gitlab-ci.yml
+
+# Temporary or cache files and directories
+.cache/
+.pytest_cache/
+
+# Additional log and backup files
+*~
+*.swp
+*.tmp
+*.bak

@@ -1,0 +1,53 @@
+# Project-specific files
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Spring Tool Suite (STS) files
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code files
+.vscode/
+
+# Maven files
+.mvn/
+mvnw*
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Log and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Node modules (if applicable)
+node_modules/
+
+# Miscellaneous files
+*~

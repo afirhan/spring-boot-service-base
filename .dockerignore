@@ -1,0 +1,72 @@
+# Ignore node_modules directory
+node_modules
+
+# Ignore dependency directories
+build
+bin
+out
+dist
+
+# Ignore IDE-specific files and directories
+.idea
+.vscode
+*.swp
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
+.project
+.classpath
+.settings
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore git-specific files
+.git
+.gitignore
+
+# Ignore Maven and Gradle specific files
+.mvn
+.gradle
+*.class
+
+# Ignore configuration files
+*.env
+.env.*
+.cache
+.pytest_cache
+
+# Ignore Docker-specific files
+Dockerfile*
+docker-compose.yml
+
+# Ignore other unnecessary files and directories
+*.iml
+*.war
+*.ear
+*.tsbuildinfo
+coverage
+
+# Ignore Python-specific files and directories
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore CI/CD configuration files and directories
+.circleci
+.github
+.gitlab-ci.yml
+
+# Ignore additional backup files
+*~
+
+# Ignore additional IDE-specific files and directories
+.idea/
