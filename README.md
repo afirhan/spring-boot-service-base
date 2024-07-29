@@ -32,7 +32,7 @@ This project utilizes the following key dependencies:
 The project uses Maven as the build tool to manage dependencies, build the project, and handle various lifecycle phases. Maven is chosen due to its robustness in handling complex projects and its extensive ecosystem of plugins and integrations.
 
 ## Application Properties
-The application configuration is defined in **`src/main/resources/application`**.properties. Key properties include:
+The application configuration is defined in **`src/main/resources/application.properties`**. Key properties include:
 - **spring.application.name**: Defines the name of the application, which is useful for identifying the service in distributed systems.
     ```
     spring.application.name=Spring Service Base
